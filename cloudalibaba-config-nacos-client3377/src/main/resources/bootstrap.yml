@@ -1,0 +1,15 @@
+server:
+  port: 3377  #服务端口号
+
+spring:
+  application:
+    name: nacos-config-client   # 也是注册到 nacos 服务的名称( 服务别名(使用服务别名去注册中心获取实际的RPC远程调用地址) )
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #服务注册中心地址
+      config:
+        server-addr: localhost:8848 #作为配置中心地址
+        file-extension: yaml
+        group: test_GROUP
+        namespace: 4a4127d7-9566-4cf6-8d09-a04961b4325f  #命名空间对应id

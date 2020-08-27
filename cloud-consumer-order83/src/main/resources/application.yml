@@ -1,0 +1,12 @@
+server:
+  port: 83  #服务端口号
+
+spring:
+  application:
+    name: nacos-order-consumer   # 也是注册到 nacos 服务的名称( 服务别名(使用服务别名去注册中心获取实际的RPC远程调用地址) )
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+service-url:
+  nacos-user-service: http://nacos-payment-provider

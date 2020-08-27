@@ -1,0 +1,12 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: consumer-order
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
